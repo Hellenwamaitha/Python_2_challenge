@@ -28,4 +28,24 @@ class Customer:
 
     def restaurants(self):
         return [review.restaurant() for review in self.reviews]
+    
+    def add_review(self, restaurant, rating):
+        new_review = Review(self, restaurant, rating)
+        self.reviews.append(new_review)
+        restaurant.add_review(new_review)
+
+    @classmethod
+
+    def num_reviews(self):
+        return len(self.reviews)
+    
+    def find_by_name(cls, name):
+        for customer in cls.all_customers:
+            if customer.full_name() == name:
+                return customer
+        return None
+    
+    def find_all_by_given_name(cls, name):
+        return [customer for customer in cls.all_customers if customer.given_name == name]
+
         
