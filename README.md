@@ -1,7 +1,7 @@
 # Python_2_challenge
 # Restaurant Review System
 
-This project implements a restaurant review system with three main classes: `Customer`, `Restaurant`, and `Review`. These classes are designed to manage customer reviews and relationships between customers, restaurants, and reviews.
+This project implements a restaurant review system and has three main classes: `Customer`, `Restaurant`, and `Review`. These classes are designed to manage customer reviews and relationships between customers, restaurants, and reviews all together.git
 
 ## Table of Contents
 
